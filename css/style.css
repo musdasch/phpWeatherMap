@@ -1,0 +1,17 @@
+#main{
+	-moz-border-radius: 3px 15px 5px 30px;
+	-webkit-border-radius: 3px 15px 5px 30px;
+	-khtml-border-radius: 3px 15px 5px 30px;
+	border-radius: 3px 15px 5px 30px;
+	behavior: url(border-radius.htc);
+	border: 3px solid #000;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.tabs{
+	border-bottom: 3px solid #EFEFEF;
+}
+
+.tab-title{
+	box-shadow: 0 0 5px #888888;
+}
