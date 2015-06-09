@@ -140,16 +140,15 @@ class Functions {
 		 * @var array
 		 */
 		$days = array(
-			'0' => 'Sontag',
-			'1' => 'Montag',
-			'2' => 'Dinstag',
-			'3' => 'Mittwoch',
-			'4' => 'Donerstag',
-			'5' => 'Freitag',
-			'6' => 'Samstag'
-			);
+			'Sontag',
+			'Montag',
+			'Dinstag',
+			'Mittwoch',
+			'Donerstag',
+			'Freitag',
+			'Samstag'
+		);
 		
-
 		return $days[$day];
 	}
 
@@ -342,7 +341,7 @@ class Functions {
 			'NW'		=> '&#xF087;',	// north west
 			'celsius'	=> '&#xF03c;',	// celsius simbol
 			'pollen'	=> '&#xF077;'	// pollen simbol
-			);
+		);
 		return $weathericons[$name];
 	}
 
@@ -367,7 +366,7 @@ class Functions {
 			'5'			=> 'Graubünden',
 			'6'			=> 'Wallis',
 			'7'			=> 'Tessin'
-			);
+		);
 		return $regionName[$index];
 	}
 
@@ -387,7 +386,7 @@ class Functions {
 			'schwach',
 			'mässig',
 			'stark'
-			);
+		);
 		return $pollenIntensity[$index];
 	}
 
@@ -410,7 +409,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_WEAT' ),
 			$this->getWeathericon( $name )
-			);
+		);
 	}
 
 	/**
@@ -481,7 +480,7 @@ class Functions {
 			$x + 170,
 			$y + 45,
 			0xFFFFFF
-			);
+		);
 
 		/**
 		 * Draw the frame to the coordinates.
@@ -493,7 +492,7 @@ class Functions {
 			$x + 170,
 			$y + 45,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the frame for the lable.
@@ -505,7 +504,7 @@ class Functions {
 			$x + 170,
 			$y - 70,
 			0x000000
-			);
+		);
 
 		/**
 		 * draw the regon name.
@@ -519,7 +518,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			$this->getRegionName( $region )
-			);
+		);
 
 		/**
 		 * Draw the icon
@@ -530,7 +529,7 @@ class Functions {
 			$x + 25,
 			$y + 20,
 			$size
-			);
+		);
 	}
 
 	/**
@@ -603,7 +602,7 @@ class Functions {
 			$x + 170,
 			$y - 40,
 			0xFFFFFF
-			);
+		);
 
 		/**
 		 * Draw the frame for max temperature.
@@ -615,7 +614,7 @@ class Functions {
 			$x + 170,
 			$y - 40,
 			0x000000
-			);
+		);
 		
 		/**
 		 * Draw the filled rectangle for max temperature.
@@ -628,7 +627,7 @@ class Functions {
 			$x + 170,
 			$y - 10,
 			$colMax
-			);
+		);
 
 		/**
 		 * Draw the frame for max temperature.
@@ -640,7 +639,7 @@ class Functions {
 			$x + 170,
 			$y - 10,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the filled rectangle for min temperature.
@@ -653,7 +652,7 @@ class Functions {
 			$x + 170,
 			$y + 20,
 			$colMin
-			);
+		);
 
 		/**
 		 * Draw the frame for min temperature.
@@ -665,7 +664,7 @@ class Functions {
 			$x + 170,
 			$y + 20,
 			0x000000
-			);
+		);
 
 		/**
 		 * draw the regon name.
@@ -679,7 +678,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			$this->getRegionName( $region )
-			);
+		);
 
 		/**
 		 * draw the max lable.
@@ -693,7 +692,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			'MAX:'
-			);
+		);
 
 		/**
 		 * draw the max temperature.
@@ -707,7 +706,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			$max
-			);
+		);
 
 		/**
 		 * draw the celsius icon for maxTemperature.
@@ -718,7 +717,7 @@ class Functions {
 			$x + 140,
 			$y - 10,
 			28
-			);
+		);
 
 		/**
 		 * draw the min lable.
@@ -732,7 +731,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			'MIN:'
-			);
+		);
 
 		/**
 		 * draw the min temperature.
@@ -746,7 +745,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			$min
-			);
+		);
 
 		/**
 		 * draw the celsius icon for minTemperature.
@@ -757,7 +756,7 @@ class Functions {
 			$x+140,
 			$y+21,
 			28
-			);
+		);
 	}
 
 	/**
@@ -802,7 +801,7 @@ class Functions {
 			$x + 160,
 			$y + 45,
 			0xFFFFFF
-			);
+		);
 
 		/**
 		 * Draw the frame to the coordinates.
@@ -814,7 +813,7 @@ class Functions {
 			$x + 160,
 			$y + 45,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the frame for the lable.
@@ -826,7 +825,7 @@ class Functions {
 			$x + 160,
 			$y - 70,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the frame for the value.
@@ -838,7 +837,7 @@ class Functions {
 			$x + 160,
 			$y + 45,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the wind direction to the map.
@@ -849,7 +848,7 @@ class Functions {
 			$x + 60,
 			$y,
 			60
-			);
+		);
 
 		/**
 		 * Draw the name of region.
@@ -863,7 +862,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			$this->getRegionName( $region ) 
-			);
+		);
 
 		/**
 		 * Draw the wind speed to the map.
@@ -877,7 +876,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			$speed.' km/h'
-			);
+		);
 	}
 
 	/**
@@ -937,7 +936,7 @@ class Functions {
 			$x + 160,
 			$y + 50,
 			0xFFFFFF
-			);
+		);
 
 		/**
 		 * Draw the frame to the coordinates.
@@ -949,7 +948,7 @@ class Functions {
 			$x + 160,
 			$y + 50,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the frame for the lable.
@@ -961,7 +960,7 @@ class Functions {
 			$x + 160,
 			$y - 70,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the frame for the value.
@@ -973,7 +972,7 @@ class Functions {
 			$x + 160,
 			$y + 50,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the background of pollen with the rigt color.
@@ -988,7 +987,7 @@ class Functions {
 			360,
 			$color,
 			0
-			);
+		);
 
 		/**
 		 * Draw the from for pollen icon.
@@ -1002,7 +1001,7 @@ class Functions {
 			0,
 			360,
 			0x000000
-			);
+		);
 
 		/**
 		 * Draw the pollen icon
@@ -1013,7 +1012,7 @@ class Functions {
 			$x + 51,
 			$y - 5,
 			40
-			);
+		);
 
 		/**
 		 * Draw the name of region.
@@ -1027,7 +1026,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			$this->getRegionName( $region ) 
-			);
+		);
 
 		/**
 		 * Draw the name of region.
@@ -1041,7 +1040,7 @@ class Functions {
 			0x000000,
 			$this->config->getConfig( 'TTF_TEXT' ),
 			$this->getPollenIntensity( $intensity )
-			);
+		);
 	}
 
 	/**
